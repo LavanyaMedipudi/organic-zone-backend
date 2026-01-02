@@ -1,12 +1,12 @@
-package com.organiczone.backend;
+package com.college.organiczone_backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OrganicZoneApplication {
+public class OrganiczoneBackendApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(OrganicZoneApplication.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(OrganiczoneBackendApplication.class, args);
+	}
 }
