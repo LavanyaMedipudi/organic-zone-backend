@@ -1,25 +1,13 @@
-package com.organiczone.backend.service;
-
-import com.organiczone.backend.model.Product;
-import com.organiczone.backend.repository.ProductRepository;
-import org.springframework.stereotype.Service;
+package com.college.organiczone_backend.service;
 
 import java.util.List;
+import com.college.organiczone_backend.dto.ProductRequestDTO;
+import com.college.organiczone_backend.model.Product;
 
-@Service
-public class ProductService {
-
-    private final ProductRepository productRepository;
-
-    public ProductService(ProductRepository productRepository) {
-        this.productRepository = productRepository;
-    }
-
-    public Product saveProduct(Product product) {
-        return productRepository.save(product);
-    }
-
-    public List<Product> getAllProducts() {
-        return productRepository.findAll();
-    }
+public interface ProductService {
+    Product addProduct(ProductRequestDTO dto);
+    List<Product> getAllProducts();
+    Product getProductById(Long id);
 }
+
+
